@@ -15,7 +15,7 @@ DefaultGroupName={#MyAppName}
 AllowNoIcons=no
 OutputDir=..\DB Monitor 1.1.0\setup
 OutputBaseFilename=DB Monitor 1.1.0
-SetupIconFile=f:\icon.ico
+SetupIconFile=..\icon.ico
 Compression=lzma
 SolidCompression=yes
 WizardStyle=modern
@@ -24,8 +24,8 @@ WizardStyle=modern
 Name: "english"; MessagesFile: "compiler:Default.isl"
 
 [Files]
-Source: "f:\dist\DB Monitor 1.1.0\{#MyAppExeName}"; DestDir: "{app}"; Flags: ignoreversion
-Source: "f:\dist\DB Monitor 1.1.0\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "..\dist\DB Monitor 1.1.0\{#MyAppExeName}"; DestDir: "{app}"; Flags: ignoreversion
+Source: "..\dist\DB Monitor 1.1.0\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
 
 [Icons]
 Name: "{group}\{#MyAppName}"; Filename: "{app}\{#MyAppExeName}"
