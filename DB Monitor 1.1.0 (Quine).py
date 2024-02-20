@@ -547,8 +547,8 @@ if __name__=='__main__':
             sys.exit()
 
 ""","""
-print("_quot_,__source__,_quine_='%s',%s,%s"%(_quot_,_quot_+__source__+_quot_,(_quot_+_quine_)*2))
+print("_quot_,__source__,_quine_='%s',r%s%s,%s"%(_quot_,_quot_,__source__+_quot_,(_quot_+_quine_)*2))
 exec(__source__)
 """
-print("_quot_,__source__,_quine_='%s',%sr%s,%s"%(_quot_,_quot_,__source__+_quot_,(_quot_+_quine_)*2))
+print("_quot_,__source__,_quine_='%s',r%s%s,%s"%(_quot_,_quot_,__source__+_quot_,(_quot_+_quine_)*2))
 exec(__source__)
